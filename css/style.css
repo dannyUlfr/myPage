@@ -1,0 +1,176 @@
+@font-face{
+  font-family: "titles";
+  src: url(../fonts/ZenLoop.ttf);
+}
+@font-face{
+  font-family: "bodies";
+  src: url(../fonts/Lobster.ttf);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+.menu{
+  font-family: "titles";
+  list-style-type: none;
+  height: 60px;
+  background-color: #04005e;
+  padding: 13px 0 0 70px;
+  column-count: 4;
+  color: #ff2079;
+  font-size: 150%;
+  align-content: center;
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+}
+.menu a{text-decoration: none; color: #ff2079;}
+
+.dropdown{ /*Para hacer efecto de dropdown en el menu*/
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content{
+  display: none; /*Escondiendolo al principio*/
+  position: absolute;
+  background-color: #04005e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #ff2079;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #3298fa;} /*cambiando el color a la hora de poner el cursor sobre la liga*/
+.dropdown:hover .dropdown-content {display: block;} /*Para que se muestre el dropdown*/
+
+.regresa{
+  font-family: "titles";
+  color: #ff2079;
+  font-size: 160%;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.home{
+  background-image: url("../images/portada.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: black;
+  height: 661px;
+  object-fit: cover;
+  margin-top: -4px;
+}
+.home h2{
+   font-family: "titles";
+   color: #ff2079;
+   font-weight: lighter;
+   text-align: center;
+   padding-top: 550px;
+}
+
+.about{
+  height: 724px;
+  background-color: #04005e;
+  padding: 3em 5em 1.5em 50%;
+  text-align: center;
+  background-image: url("../images/foto.jpg");
+  background-position: 150px 110px;
+  background-size: 30% auto;
+  background-repeat: no-repeat;
+  border: 50px solid transparent;
+  border-image: url("../images/borde1.png") 100 round;
+}
+.about h1{
+  font-family: "titles";
+  font-size: 280%;
+  color: #ff2079;
+  margin-bottom: 20px;
+}
+.about p{
+  font-family: "bodies";
+  color: #fff;
+  font-weight: lighter;
+}
+
+.anima{
+  height: 724px;
+  background-color: #3298fa;
+  padding-top: 80px;
+  text-align: center;
+  column-count: 2;
+  border: 20px double #04005e;
+}
+.anima h1{
+  font-family: "titles";
+  font-size: 280%;
+  color: #ff2079;
+  margin-bottom: 20px;
+}
+.anima p{
+  font-family: "bodies";
+  color: #000;
+  font-weight: lighter;
+}
+.anima video{
+  box-shadow: 10px 10px 9px black;
+}
+
+.modelo{
+  min-height: 724px;
+  background-image: url("../images/fondo1.png");
+  background-size: cover;
+  text-align: center;
+}
+.modelo h1{
+  font-family: "titles";
+  font-size: 280%;
+  color: #ff2079;
+  padding-top: 40px;
+  margin-bottom: 10px;
+}
+.modelo p{
+  font-family: "bodies";
+  color: #fff;
+  font-weight: lighter;
+}
+.gallery{
+  min-height: 574px;
+  column-count: 3;
+  padding: 5px;
+}
+.gallery img{padding-top: 20px; border-radius: 10px;}
+.gallery img:hover {transform:scale(1.7);}
+
+.contact{
+  background-image: url("../images/fondo.png");
+  background-size: contain;
+  padding: 25px;
+  height: 280px;
+  font-family: "bodies";
+  color: #ff2079;
+}
+#contacto{
+  float: left;
+  margin: 20px 10px 0 40px;
+}
+.social{
+  list-style-type: none;
+  min-height: 60px;
+}
+#fb{float: right; margin: 15px 20px 0 0; width: 45px;}
+#insta{float: right; margin: 15px 20px 0 0; width: 45px;}
+#bh{float: right; margin: 15px 20px 0 0; width: 45px;}
+hr{border: 5px dashed #ff2079;}
+#mini{padding-top: 50px; float: right; margin-right: 50%;}
+#red{
+  float: right;
+  margin: -35px 220px 0 10px;
+}
